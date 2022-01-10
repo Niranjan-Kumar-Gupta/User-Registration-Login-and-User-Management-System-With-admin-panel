@@ -2,6 +2,14 @@
 
 we have created a User Registration &amp; Login and User Management System With admin panel page of admin in Angular and connected with the database (developed in node,express js,Mongodb),here is only frontend
 
+
+
+
+https://user-images.githubusercontent.com/75079061/148761948-4da4204b-9958-4428-946e-3e363fcefa78.mp4
+
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
 ## Development server
