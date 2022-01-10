@@ -1,0 +1,55 @@
+
+<div class="container my-4">   
+    
+    <nav class="navbar navbar-light bg-light mb-5">
+        <a class="navbar-brand" [routerLink]="'.'">Niranjan</a>
+    
+        <!-- Step 2: Add the ngbCollapse directive to the element below. -->
+        <div class=" justify-content-end">
+            <ul class="navbar-nav justify-content-end">
+                <li class="nav-item mx-3" routerLinkActive="active">
+                    <!-- Step 4: Close the menu when a link is clicked. -->
+                    <a class="nav-link btn btn-primary mx-2 w-100" [routerLink]="'/login'" (click)="onClick()">logout</a>
+                </li>
+               
+            </ul>
+        </div>
+    </nav>
+
+    
+    <h6>Candidates List: {{totalCandidate}}</h6>
+
+    <table class="table table-striped my-5">
+        <thead>
+        <tr>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col">Date Birth</th>
+        <th scope="col">age</th>
+        <th scope="col">address</th>
+        <th scope="col">State</th>
+        <th scope="col">pin code</th>
+        
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let candidate of candidates; index as i">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ candidate.name }}</td>
+        <td>{{ candidate.dateOfBirth }}</td>
+        <td>{{ candidate.age }}</td>
+        <td>{{ candidate.address }}</td>
+        <td>{{ candidate.state }}</td>
+        <td>{{ candidate.pinCode }}</td>
+        <td><div class="__icon">
+              <mat-icon (click)="deleteCandidate(candidate._id)">delete</mat-icon>
+              <mat-icon routerLink="/admin/updateCandidate/{{candidate._id}}"  color="blue">edit</mat-icon>
+              
+           </div>
+        </td>
+        </tr>
+        </tbody>
+    </table>
+    
+    <a [routerLink]="'/admin/createCandidate'">+ Add new candidate</a>
+</div>

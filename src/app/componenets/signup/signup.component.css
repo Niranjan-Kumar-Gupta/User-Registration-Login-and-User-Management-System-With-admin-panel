@@ -1,0 +1,28 @@
+.from_container{
+    max-width: 420px;
+   
+}
+.from_container p{
+    font-size: 10px;
+    margin-top: 5px;
+    color: rgb(85, 167, 240);
+    text-align: right 
+}
+
+.from_container button{
+    margin-top: 40px;
+    width: 130px;
+    height: 50px;
+    
+}
+.from_container label{
+    font-weight: 600;
+}
+
+.from_container small{ 
+    color: red;
+    
+}
+.inputDiv{
+    height: 85px;
+}

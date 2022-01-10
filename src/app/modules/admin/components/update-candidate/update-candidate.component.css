@@ -1,0 +1,26 @@
+.candidateFrom{
+    
+    padding: 30px;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color:white ;
+    
+}
+.candidateFrom h1{
+    font-size: 18px;
+  
+}
+.candidateFrom label{
+    font-weight: 600;
+    margin-top: 20px;
+}
+.candidateFrom button{
+    width: 150px;
+    height: 50px;
+    margin: 30px 0;
+}
+.candidateFrom a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}

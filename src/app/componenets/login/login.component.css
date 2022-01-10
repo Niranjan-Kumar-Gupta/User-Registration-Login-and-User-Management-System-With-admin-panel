@@ -1,0 +1,21 @@
+.from_container{
+    max-width: 400px;
+   
+}
+
+.from_container button{
+    margin-top: 40px;
+    width: 130px;
+    height: 50px;
+    
+}
+.from_container label{
+    font-weight: 600;
+}
+.from_container small{
+   
+    color: red;
+}
+.inputDiv{
+    height: 100px;
+}
